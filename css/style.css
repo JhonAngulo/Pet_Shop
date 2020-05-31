@@ -1,0 +1,82 @@
+:root {
+  --primary-color: #7acc2d;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: Helvetica;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  padding: 10px;
+  color: white;
+}
+
+.navbar__options {
+  display: flex;
+}
+
+.navbar__option-item {
+  padding-left: 20px;
+  list-style: none;
+}
+
+.navbar__option-link {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar__option-link:hover {
+  color: white;
+}
+
+.main-container {
+  padding: 15%;
+  text-align: center;
+}
+
+.products-container {
+  background-image: url("../images/curve.webp");
+  background-size: cover;
+  background-position: center top;
+  max-height: 50px;
+  padding: 20%;
+  display: flex;
+}
+
+.product-container {
+  padding: 10px;
+  margin-top: -240px;
+}
+
+.product-card {
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0 0 1px #c1bcbc;
+}
+
+.product-card__thumbnail {
+  text-align: center;
+}
+
+.product-card__button {
+  background-color: var(--primary-color);
+  width: 100%;
+  padding: 10px;
+  color: white;
+  border: 0;
+  font-size: 12px;
+  border-radius: 2px;
+}
+
+.product-card__button:hover {
+  background-color: #5e9e22;
+  cursor: pointer;
+}
