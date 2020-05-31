@@ -1,155 +1,126 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Brand</title>
-  </head>
+    <meta charset="utf-8">
+    <meta name="description" content="Este es un sitio de producto genial">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>Pet Shop</title>
+  </head> 
   <body>
     <nav class="navbar">
-      <div class="navbar__logo">
-        <img src="images/logo.webp" alt="logo_brand" />
-      </div>
+      <img src="images/logo.webp" alt="">
       <ul class="navbar__options">
         <li class="navbar__option-item">
-          <a class="navbar__option-link" href="#">Faqs</a>
-        </li>
+          <a class="navbar__option-link" href="#">Faqs</a></li>
         <li class="navbar__option-item">
-          <a class="navbar__option-link" href="#">Producto y descripción</a>
-        </li>
+          <a class="navbar__option-link" href="#">Producto y descripción</a></li>
       </ul>
     </nav>
-    <div class="main-container">
-      <h1>
-        Este es un producto increible, no se que haces viendo que lo puedes
-        tener
-      </h1>
-    </div>
-    <div class="products-container">
-      <div class="product-container">
-        <div class="product-card">
-          <div class="product-card__thumbnail">
-            <img class="product-card__img" src="images/box1.webp" alt="" />
+    <h1 class="main-section">
+      Este es un producto increible, no se que haces viendo que lo puedes tener
+    </h1>
+    <div class="products-section">
+      <div class="product">
+        <div class="product__card">
+          <div class="product__image">
+            <img src="images/box1.webp" alt="">
           </div>
-          <h1>Producto 1</h1>
-          <p>
-            Miles de productos hay en el mercado, pero nada como una caja de
-            gaticos.
-          </p>
-          <button class="product-card__button">Lo quiero</button>
+          <h3>Producto 1</h3>
+          <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+          <button class="product__button">
+            Lo quiero
+          </button>
         </div>
       </div>
-      <div class="product-container">
-        <div class="product-card">
-          <div class="product-card__thumbnail">
-            <img class="product-card__img" src="images/box2.webp" alt="" />
+      <div class="product">
+        <div class="product__card">
+          <div class="product__image">
+            <img src="images/box2.webp" alt="">
           </div>
-          <h1>Producto 2</h1>
-          <p>
-            Miles de productos hay en el mercado, pero nada como una caja de
-            gaticos.
-          </p>
-          <button class="product-card__button">Lo quiero</button>
+          <h3>Producto 1</h3>
+          <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+          <button class="product__button">
+            Lo quiero
+          </button>
         </div>
       </div>
     </div>
-    <div class="features-container">
-      <div class="feature-container">
-        <div class="feature-card">
-          <div class="feature-card__thumbnail">
-            <img class="feature-card__image" src="images/b1.png" alt="" />
-          </div>
-          <h3>Los más suavecitos</h3>
-          <p>
-            Miles de productos hay en el mercado, pero nada como una caja de
-            gaticos.
+    <div class="benefits-section">
+      <div class="benefit">
+        <div class="benefit__content">
+          <img class="benefit__img" src="images/b1.png" alt="">
+          <h3>Lo mas suavecito</h3>
+          <p class="benefit__detail">
+            Miles de productos hay en el mercado, pero nada como una caja con gatitos
           </p>
         </div>
       </div>
-      <div class="feature-container">
-        <div class="feature-card">
-          <div class="feature-card__thumbnail">
-            <img class="feature-card__image" src="images/b2.png" alt="" />
-          </div>
-          <h3>Los más incleíbles</h3>
-          <p>
-            Miles de productos hay en el mercado, pero nada como una caja de
-            gaticos.
+      <div class="benefit">
+        <div class="benefit__content">
+          <img class="benefit__img" src="images/b2.png" alt="">
+          <h3>Lo más increíble</h3>
+          <p class="benefit__detail">
+            Miles de productos hay en el mercado, pero nada como una caja con gatitos
           </p>
         </div>
       </div>
-      <div class="feature-container">
-        <div class="feature-card">
-          <div class="feature-card__thumbnail">
-            <img class="feature-card__image" src="images/b3.png" alt="" />
-          </div>
-          <h3>Los más confiables</h3>
-          <p>
-            Miles de productos hay en el mercado, pero nada como una caja de
-            gaticos.
+      <div class="benefit">
+        <div class="benefit__content">
+          <img class="benefit__img" src="images/b3.png" alt="">
+          <h3>Lo mas confiable</h3>
+          <p class="benefit__detail">
+            Miles de productos hay en el mercado, pero nada como una caja con gatitos
           </p>
         </div>
       </div>
     </div>
-    <div class="divider"></div>
+    <hr>
+    <h2 class="mention__title">Menciones</h2>
     <div class="mentions-section">
-      <h1 class="mentions-section__title">Menciones</h1>
-      <div class="mentions-container">
-        <div class="mention-container">
-          <div class="mention-card">
-            <img class="mention-card__img" src="images/p1.png" alt="" />
-            <div class="mention-card__description">
-              <h3>Mario</h3>
-              <p>
-                Miles de productos hay en el mercado, pero nada como una caja de
-                gaticos.
-              </p>
-            </div>
+      <div class="mention__card">
+        <div class="mention__content">
+          <img class="mention__image" src="images/p1.png" alt="">
+          <div>
+            <h3 class="mention__title">Mario</h3>
+            <p class="mention__details">Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
           </div>
         </div>
-        <div class="mention-container">
-          <div class="mention-card">
-            <img class="mention-card__img" src="images/p2.png" alt="" />
-            <div class="mention-card__description">
-              <h3>Maria</h3>
-              <p>
-                Miles de productos hay en el mercado, pero nada como una caja de
-                gaticos.
-              </p>
-            </div>
+      </div>
+      <div class="mention__card">
+        <div class="mention__content">
+          <img class="mention__image" src="images/p2.png" alt="">
+          <div>
+            <h3 class="mention__title">Maria</h3>
+            <p class="mention__details">Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
           </div>
         </div>
-        <div class="mention-container">
-          <div class="mention-card">
-            <img class="mention-card__img" src="images/p3.png" alt="" />
-            <div class="mention-card__description">
-              <h3>Joe</h3>
-              <p>
-                Miles de productos hay en el mercado, pero nada como una caja de
-                gaticos.
-              </p>
-            </div>
+      </div>
+      <div class="mention__card">
+        <div class="mention__content">
+          <img class="mention__image" src="images/p3.png" alt="">
+          <div>
+            <h3 class="mention__title">Joe</h3>
+            <p class="mention__details">Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
           </div>
         </div>
-        <div class="mention-container">
-          <div class="mention-card">
-            <img class="mention-card__img" src="images/p4.png" alt="" />
-            <div class="mention-card__description">
-              <h3>Jamaica</h3>
-              <p>
-                Miles de productos hay en el mercado, pero nada como una caja de
-                gaticos.
-              </p>
-            </div>
+      </div>
+      <div class="mention__card">
+        <div class="mention__content">
+          <img class="mention__image" src="images/p4.png" alt="">
+          <div>
+            <h3 class="mention__title">Jamaica</h3>
+            <p class="mention__details">Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
           </div>
         </div>
       </div>
     </div>
     <footer class="footer">
-      <a class="footer__link" href="">Términos y condiciones</a>
-      <span>contacto@mail.com</span>
+      <div class="option">Terminos y condiciones</div>
+      <div class="option">contacto@mail.com</div>
     </footer>
-    <script src="js/script.js"></script>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="scripts/script.js"></script>
   </body>
 </html>
