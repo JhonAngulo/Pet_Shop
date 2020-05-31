@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 :root {
   --primary-color: #7acc2d;
+  --secondary-color: #313337;
+  --box: 0 0 1px #c1bcbc;
 }
 
 html,
@@ -7,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 12px;
-  font-family: Helvetica;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .navbar {
@@ -29,7 +33,7 @@ body {
 }
 
 .navbar__option-link {
-  color: black;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
@@ -53,13 +57,13 @@ body {
 
 .product-container {
   padding: 10px;
-  margin-top: -240px;
+  margin-top: -300px;
 }
 
 .product-card {
   background-color: white;
   padding: 15px;
-  box-shadow: 0 0 1px #c1bcbc;
+  box-shadow: var(--box);
 }
 
 .product-card__thumbnail {
@@ -79,4 +83,75 @@ body {
 .product-card__button:hover {
   background-color: #5e9e22;
   cursor: pointer;
+}
+
+.features-container {
+  max-height: 180px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15%;
+}
+
+.feature-container {
+  padding: 10px;
+}
+
+.feature-card {
+  width: 160px;
+}
+
+
+.feature-card__image {
+  height: 130px;
+}
+
+
+.divider {
+  border-bottom: 1px solid #c1bcbc;
+}
+
+.mentions-container {
+  display: flex;
+  padding: 5%;
+}
+
+.mention-container {
+  margin-top: -60px;
+  padding: 10px;
+}
+
+.mention-card {
+  max-width: 240px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 2px;
+}
+
+.mentions-section__title {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.mention-card__img {
+  width: 232px;
+}
+.mention-card__description {
+  font-size: 12px;
+  margin-top: -10px;
+  padding: 0px 8px 4px 8px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  color: white;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: white;
 }
