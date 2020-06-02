@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Este es un sitio de producto genial" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <title>Pet Shop</title>
+  </head>
+  <body>
+    <nav class="navbar fadeInDown">
+      <img src="images/logo.webp" alt="" />
+      <ul class="navbar__options">
+        <li class="navbar__option-item">
+          <a class="navbar__option-link" href="#">Faqs</a>
+        </li>
+        <li class="navbar__option-item">
+          <a class="navbar__option-link" href="#">Producto y descripción</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container payment-section">
+      <div class="row md">
+        <div class="col-6">
+          <div class="payment_container">
+            <div class="payment_container__image">
+              <img src="images/box2.webp" alt="" />
+            </div>
+            <h3>Producto 1</h3>
+            <p>
+              Miles de productos hay en el mercado, pero nada como una caja con
+              gatitos.
+            </p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="payment_container">
+            <form action="/venta.html" class="payment_form">
+              <label class="payment_form__label" for="name">Nombre</label>
+              <input class="payment_form__input" type="text" id="name" name="name">
+              <label class="payment_form__label" for="email">Email</label>
+              <input class="payment_form__input" type="text" id="email" name="email"/>
+              <label class="payment_form__label" for="phone">Phone</label>
+              <input class="payment_form__input" type="text" id="phone" name="phone"/>
+              <button type="submit" class="payment_form__button" >Confirmar pago</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="option">Terminos y condiciones</div>
+      <div class="option">contacto@mail.com</div>
+    </footer>
+
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

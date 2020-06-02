@@ -3,7 +3,7 @@
 :root {
   --primary-color: #7acc2d;
   --secondary-color: #313337;
-  --box: 0px 0 2px 1px #e6e5e9;
+  --shadow: 0px 0 2px 1px #e6e5e9;
 }
 
 html,
@@ -13,6 +13,8 @@ body {
   font-size: 12px;
   font-family: "Open Sans", sans-serif;
 }
+
+/* --------------- section navbar ---------------- */
 
 .navbar {
   display: flex;
@@ -41,10 +43,14 @@ body {
   color: white;
 }
 
+/* --------------- section main-section ---------------- */
+
 .main-section {
   padding: 15%;
   text-align: center;
 }
+
+/* --------------- section products ---------------- */
 
 .products-section {
   background-image: url("../images/curve.webp");
@@ -65,7 +71,7 @@ body {
   background-color: white;
   padding: 20px;
   border-radius: 3px;
-  box-shadow: var(--box);
+  box-shadow: var(--shadow);
 }
 
 .product__image {
@@ -87,6 +93,8 @@ body {
   cursor: pointer;
 }
 
+/* --------------- section benefits ---------------- */
+
 .benefits-section {
   padding: 10%;
   display: flex;
@@ -104,6 +112,8 @@ body {
 .benefit__detail {
   text-align: justify;
 }
+
+/* --------------- section mention ---------------- */
 
 .mention__title {
   text-align: center;
@@ -123,12 +133,14 @@ body {
 }
 
 .mention__content {
-  box-shadow: 0px 0 2px 1px #e6e5e9;
+  box-shadow: var(--shadow) ;
 }
 
 .mention__details {
   padding: 10px;
 }
+
+/* --------------- page productos ---------------- */
 
 .products-page__title {
   padding: 8%;
@@ -151,6 +163,80 @@ body {
   color: var(--secondary-color);
 }
 
+/* --------------- page venta ---------------- */
+
+.payment-section {
+  margin-top: 110px;
+  margin-bottom: 110px;
+  align-items: center;
+}
+
+.payment_container {
+  margin: auto;
+  width: 350px;
+  min-height: 300px;
+  background-color: white;
+  box-shadow: var(--shadow);
+  padding: 10px;
+}
+
+.payment_container__image {
+  max-width: 150px;
+  margin: auto;
+}
+
+.payment_form {
+  padding: 10px 20px;
+}
+
+@media (max-width: 760px) {
+  .payment_form {
+    padding-bottom: 24px;
+  }
+}
+
+.payment_form__label {
+  display: block;
+  width: max-content;
+  font-size: 12px;
+  color: var(--secondary-color);
+  margin: 20px 0 4px 0;
+}
+
+.payment_form__input {
+  width: 98%;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid var(--secondary-color);
+}
+
+.payment_form__input:hover, .payment_form__label:hover{
+  cursor: pointer;
+}
+
+.payment_form__input:focus {
+  outline-color: var(--primary-color);
+}
+
+.payment_form__button {
+  background-color: var(--primary-color);
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 30px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  height: 34px;
+  width: 100%;
+}
+
+.payment_form__button:hover {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  cursor: pointer;
+}
+/* --------------- section footer ---------------- */
 .footer{
   display: flex;
   justify-content: space-between;

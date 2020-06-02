@@ -70,23 +70,52 @@
   padding: 10px;
 }
 
-@media (max-width: 800px) {
-  .row {
+.hide_desktop {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .row.md {
     display: inherit;
   }
 
   .col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-10,
-.col-11,
-.col-12 {
-  width: 100%;
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    width: 100%;
+  }
 }
+
+@media (max-width: 600px) {
+  .row {
+    display: inherit;
+  }
+
+  .hide_mobile {
+    display: none;
+  }
+
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    width: 100%;
+  }
 }
