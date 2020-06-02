@@ -130,6 +130,27 @@ body {
   padding: 10px;
 }
 
+.products-page__title {
+  padding: 8%;
+  font-size: 30px;
+  color: var(--secondary-color);
+}
+
+.products-item__image {
+  width: 70%;
+  margin: center;
+}
+
+.products-item__title {
+  font-size: 17px;
+  color: var(--secondary-color);
+}
+
+.products-item__text {
+  margin-right: 10%;
+  color: var(--secondary-color);
+}
+
 .footer{
   display: flex;
   justify-content: space-between;
