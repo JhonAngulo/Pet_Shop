@@ -236,11 +236,49 @@ body {
   border: 1px solid var(--secondary-color);
   cursor: pointer;
 }
+
+/* --------------- section terms ---------------- */
+
+.terms-section {
+  padding: 2% 10% 10% 10%;
+}
+
+.terms-section__title{ 
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+.terms-section__text{
+  font-size: 16px;
+  text-align: justify;
+}
+
+
+/* --------------- section faqs ---------------- */
+
+.faqs-section {
+  padding: 3% 10% 10% 10%;
+}
+
+.faqs-section__title{ 
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.faqs-section__text{
+  font-size: 12px;
+}
+
 /* --------------- section footer ---------------- */
+
 .footer{
   display: flex;
   justify-content: space-between;
   background-color: var(--secondary-color);
   padding: 20px;
   color: white;
+}
+
+.option__link {
+  color: var(--primary-color);
 }

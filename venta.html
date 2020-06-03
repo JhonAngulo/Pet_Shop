@@ -12,13 +12,17 @@
   </head>
   <body>
     <nav class="navbar fadeInDown">
-      <img src="images/logo.webp" alt="" />
+      <a href="index.html">
+        <img src="images/logo.webp" alt="logo pet shop" />
+      </a>
       <ul class="navbar__options">
         <li class="navbar__option-item">
-          <a class="navbar__option-link" href="#">Faqs</a>
+          <a href="faqs.html" class="navbar__option-link">Faqs</a>
         </li>
         <li class="navbar__option-item">
-          <a class="navbar__option-link" href="#">Producto y descripción</a>
+          <a href="producto.html" class="navbar__option-link"
+            >Producto y descripción</a
+          >
         </li>
       </ul>
     </nav>
@@ -39,28 +43,69 @@
         </div>
         <div class="col-6">
           <div class="payment_container">
-            <form action="/venta.html" class="payment_form">
-              <label class="payment_form__label" for="name">Nombre</label>
-              <input class="payment_form__input" type="text" id="name" name="name">
+            <form
+              action="https://www.paypal.com/cgi-bin/webscr"
+              method="post"
+              id="form_paid"
+              class="payment_form"
+            >
+              <label class="payment_form__label" for="name"
+                >Primer Nombre</label
+              >
+              <input
+                class="payment_form__input"
+                type="text"
+                id="name"
+                name="first_name"
+              />
               <label class="payment_form__label" for="email">Email</label>
-              <input class="payment_form__input" type="text" id="email" name="email"/>
+              <input
+                class="payment_form__input"
+                type="email"
+                id="email"
+                name="email"
+              />
               <label class="payment_form__label" for="phone">Phone</label>
-              <input class="payment_form__input" type="text" id="phone" name="phone"/>
-              <button type="submit" class="payment_form__button" >Confirmar pago</button>
+              <input
+                class="payment_form__input"
+                type="text"
+                id="phone"
+                name="night_phone_a"
+              />
+
+              <input type="hidden" name="cmd" value="_s-xclick" />
+              <input
+                type="hidden"
+                name="hosted_button_id"
+                value="5R8YGXQZ8BACA"
+              />
+              <button
+                type="button"
+                onclick="send()"
+                class="payment_form__button"
+              >
+                Confirmar pago
+              </button>
             </form>
           </div>
         </div>
       </div>
     </div>
     <footer class="footer">
-      <div class="option">Terminos y condiciones</div>
-      <div class="option">contacto@mail.com</div>
+      <div class="option">
+        <a class="option__link" href="terminos.html">Terminos y condiciones</a>
+      </div>
+      <div class="option">
+        <a class="option__link" href="mailto:contacto@mail.com">
+          contacto@mail.com
+        </a>
+      </div>
     </footer>
 
     <script
       data-cfasync="false"
       src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
     ></script>
-    <script src="scripts/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
