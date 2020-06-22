@@ -7,9 +7,3 @@
 
 <h3>url:</h3>
 <a href="https://jhonangulo.github.io/Pet_Shop/">Personal page</a>
-
-# Installation
-`npm install`
-
-# Run the project
-`npm run start`
