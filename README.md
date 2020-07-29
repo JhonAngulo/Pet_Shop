@@ -6,4 +6,4 @@
 <p>pet store check out as practices of the courses carried out in platzi.</p>
 
 <h3>url:</h3>
-<a href="https://jhonangulo.github.io/Pet_Shop/">Personal page</a>
+<a href="https://jhonangulo.github.io/Pet_Shop/">link to page</a>
